@@ -43,7 +43,7 @@ if (!useSpecial && !useNumbers && !useLower && !useUpper) {
 
 for (i = 0; i < passwordCharacters; i++) {
   //debugger;
-  newPassword[i] = selectedPrompts[Math.floor(Math.random() * passwordCharacters)];
+  newPassword[i] = selectedPrompts[Math.floor(Math.random() * selectedPrompts.length)];
 }
   
 return newPassword.join("");
