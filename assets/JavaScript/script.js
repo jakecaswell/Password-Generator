@@ -5,6 +5,10 @@ var numericCharacters = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
 // Assignment code here
 var generatePassword = function() {
+var newPassword = [];
+
+var selectedPrompts = [];
+
 var passwordCharacters = parseInt(prompt("Please select a password between 8 and 128 characters"));
 if (passwordCharacters > 8 && passwordCharacters < 128) {
 }
@@ -49,9 +53,7 @@ return newPassword.join("");
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
-var newPassword = [];
 
-var selectedPrompts = [];
 
 // Write password to the #password input
 function writePassword() {
